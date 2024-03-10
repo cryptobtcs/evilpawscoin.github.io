@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReBitcoin</title>
+    <title>EvilPawsCoin</title>
     <style>
         body {
             margin: 0;
@@ -22,7 +22,7 @@
             padding: 10px 20px;
             margin: 20px 10px;
             border-radius: 15px;
-            background-color: rgba(255, 255, 255, 0.8); /* Cambiar el fondo del botón a blanco sólido */
+            background-color: white; /* Cambiar el fondo del botón a blanco sólido */
             color: black; /* Cambiar el color del texto del botón a negro */
             text-decoration: none;
         }
@@ -33,11 +33,20 @@
             padding: 20px;
             box-sizing: border-box;
             font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.8); /* Cambiar el fondo del cuadro de descripción a negro sólido */
-            color: white; /* Cambiar el color del texto del cuadro de descripción a blanco */
+            background-color: white; /* Cambiar el fondo del cuadro de descripción a blanco */
+            color: black; /* Cambiar el color del texto del cuadro de descripción a negro */
         }
         .logo {
             margin-top: 20px;
+            animation: floatLogo 5s infinite alternate; /* Agregar animación de movimiento */
+        }
+        @keyframes floatLogo {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px); /* Mover el logo hacia arriba */
+            }
         }
         .footer {
             margin-top: 30px;
@@ -53,7 +62,7 @@
     </div>
 
     <div class="logo">
-        <img src="logo1.png" alt="ReBitcoin Logo" width="400px">
+        <img src="logo1.png" alt="EvilPawsCoin Logo" width="400px">
     </div>
 
     <div class="description-box">
