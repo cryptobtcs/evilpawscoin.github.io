@@ -17,8 +17,9 @@
             padding: 10px;
             text-align: right;
         }
-        .button, .description-box, .roadmap-step {
+        .button, .description-box, .roadmap-container {
             display: inline-block;
+            vertical-align: top; /* Alinear elementos al tope */
             margin: 20px 10px;
             border-radius: 30px; /* Cambiar la forma de los recuadros */
             padding: 20px;
@@ -28,15 +29,17 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra para un aspecto más profesional */
         }
         .description-box {
-            width: 60%;
-            margin: 20px auto;
-            padding: 20px;
-            box-sizing: border-box;
-            font-weight: bold;
-            background-color: rgba(255, 255, 255, 0.1); /* Hacer ligeramente transparente */
+            width: 30%; /* Cambiar el ancho para dejar espacio para el logo */
+            margin-right: 20px; /* Añadir margen a la derecha para separar del logo */
         }
         .logo {
             margin-top: 20px;
+            display: inline-block; /* Hacer que el logo sea inline-block para que los elementos fluyan correctamente */
+            vertical-align: top; /* Alinear el logo al tope */
+        }
+        .roadmap-container {
+            width: 60%; /* Utilizar el 60% del ancho para el roadmap */
+            text-align: left; /* Alinear texto del roadmap a la izquierda */
         }
         .footer {
             margin-top: 30px;
@@ -51,25 +54,27 @@
         <a href="#" class="button">NFT's</a>
     </div>
 
-    <div class="logo">
-        <img src="logo1.png" alt="EvilPawsCoin Logo" width="400px">
-    </div>
-
     <div class="description-box">
-        A wicked meme token on Solana, determined to reign supreme in the meme coin world. Join us as we unleash the dark side of crypto and carve our path to dominance. Don't miss out on the opportunity to be part of the most powerful meme coin community. Created solely for entertainment purposes with no practical utility.
+        <p>A wicked meme token on Solana, determined to reign supreme in the meme coin world. Join us as we unleash the dark side of crypto and carve our path to dominance. Don't miss out on the opportunity to be part of the most powerful meme coin community. Created solely for entertainment purposes with no practical utility.</p>
     </div>
 
-    <div class="roadmap-step">
-        <h2>Phase 1: Launch</h2>
-        <p>Launch the EvilPawsCoin token and distribute it to initial holders.</p>
+    <div class="logo">
+        <img src="logo1.png" alt="EvilPawsCoin Logo" width="200px">
     </div>
-    <div class="roadmap-step">
-        <h2>Phase 2: Community Building</h2>
-        <p>Engage with the community through social media, community events, and partnerships.</p>
-    </div>
-    <div class="roadmap-step">
-        <h2>Phase 3: Development</h2>
-        <p>Continue development of the EvilPawsCoin ecosystem, including additional features and utilities.</p>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h2>Phase 1: Launch</h2>
+            <p>Launch the EvilPawsCoin token and distribute it to initial holders.</p>
+        </div>
+        <div class="roadmap-step">
+            <h2>Phase 2: Community Building</h2>
+            <p>Engage with the community through social media, community events, and partnerships.</p>
+        </div>
+        <div class="roadmap-step">
+            <h2>Phase 3: Development</h2>
+            <p>Continue development of the EvilPawsCoin ecosystem, including additional features and utilities.</p>
+        </div>
     </div>
 
     <div class="footer">
