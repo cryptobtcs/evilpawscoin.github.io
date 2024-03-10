@@ -9,63 +9,68 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background: radial-gradient(circle, #0f0f0f, #000); /* Mejora del fondo negro */
-            color: white; /* Cambiar el color del texto a blanco */
+            background: radial-gradient(circle, #0f0f0f, #000); /* Fondo negro */
+            color: white; /* Texto blanco */
             text-align: center;
-            overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
         }
         .navbar {
             padding: 10px;
-            text-align: center; /* Alinear el texto al centro */
+            text-align: center;
         }
         .button {
             display: inline-block;
             padding: 10px 20px;
             margin: 20px 10px;
             border-radius: 15px;
-            background-color: rgba(255, 255, 255, 0.5); /* Hacer ligeramente transparente */
-            color: white; /* Cambiar el color del texto a blanco */
+            background-color: rgba(255, 255, 255, 0.5); /* Botones ligeramente transparentes */
+            color: white; /* Texto blanco */
             text-decoration: none;
-            text-transform: uppercase; /* Convertir texto a mayúsculas */
-            font-weight: bold; /* Hacer el texto en negrita */
+            text-transform: uppercase; /* Texto en mayúsculas */
+            font-weight: bold; /* Texto en negrita */
         }
         .description-box {
             display: inline-block;
-            vertical-align: top; /* Alinear elementos al tope */
-            margin: 20px auto;
-            border-radius: 30px; /* Cambiar la forma del recuadro */
+            vertical-align: top;
+            margin: 20px 20px;
+            border-radius: 30px;
             padding: 20px;
-            background-color: rgba(50, 50, 50, 0.7); /* Gris oscuro ligeramente transparente */
-            color: white; /* Cambiar el color del texto a blanco */
+            background-color: rgba(50, 50, 50, 0.7); /* Cuadro de descripción gris oscuro ligeramente transparente */
+            color: white; /* Texto blanco */
             text-align: justify; /* Justificar el texto */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra para un aspecto más profesional */
-            width: 40%; /* Cambiar el ancho para ocupar más espacio */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+            width: 60%;
         }
         .logo {
-            position: fixed; /* Hacer que el logo sea un elemento fijo */
-            top: 50%; /* Centrar verticalmente */
-            left: 20px; /* Espacio desde la izquierda */
-            transform: translateY(-50%); /* Alinear verticalmente */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 20px;
+            margin-right: 20px;
         }
         .roadmap-container {
-            text-align: center; /* Centrar el contenido */
-            margin-top: 20px; /* Espacio superior */
+            text-align: left; /* Alineación del texto del roadmap */
+            margin-top: 20px;
         }
         .roadmap-step {
-            display: inline-block;
-            vertical-align: top; /* Alinear elementos al tope */
-            margin: 0 10px;
-            border-radius: 30px; /* Cambiar la forma del recuadro */
+            margin-bottom: 20px; /* Espacio entre los pasos del roadmap */
             padding: 20px;
-            background-color: rgba(50, 50, 50, 0.7); /* Gris oscuro ligeramente transparente */
-            color: white; /* Cambiar el color del texto a blanco */
-            text-align: justify; /* Justificar el texto */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra para un aspecto más profesional */
-            width: 200px; /* Ancho fijo */
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.5); /* Recuadros del roadmap ligeramente transparentes */
+            color: black; /* Texto negro */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
         }
         .footer {
             margin-top: 30px;
             font-size: 0.8em;
+        }
+        @media only screen and (max-width: 600px) {
+            .description-box {
+                width: 90%; /* Reducir el ancho en pantallas pequeñas */
+                margin: 20px auto;
+            }
+            .logo {
+                display: block; /* Cambiar a bloque para que aparezca debajo de la descripción */
+                margin: 20px auto; /* Centrar el logo */
+            }
         }
     </style>
 </head>
@@ -75,12 +80,12 @@
         <a href="#" class="button">Roadmap</a>
     </div>
 
-    <div class="logo">
-        <img src="logo1.png" alt="EvilPawsCoin Logo" width="100px">
-    </div>
-
     <div class="description-box">
         <p>A wicked meme token on Solana, determined to reign supreme in the meme coin world. Join us as we unleash the dark side of crypto and carve our path to dominance. Don't miss out on the opportunity to be part of the most powerful meme coin community. Created solely for entertainment purposes with no practical utility.</p>
+    </div>
+
+    <div class="logo">
+        <img src="logo1.png" alt="EvilPawsCoin Logo" width="200px">
     </div>
 
     <div class="roadmap-container">
