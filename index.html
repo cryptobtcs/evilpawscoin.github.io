@@ -31,7 +31,7 @@
         .description-box {
             display: inline-block;
             vertical-align: top;
-            margin: 20px 20px;
+            margin: 20px auto;
             border-radius: 30px;
             padding: 20px;
             background-color: rgba(50, 50, 50, 0.7); /* Cuadro de descripción gris oscuro ligeramente transparente */
@@ -45,10 +45,21 @@
             vertical-align: top;
             margin-top: 20px;
             margin-right: 20px;
+            animation: jump 1s infinite alternate; /* Animación de salto */
+        }
+        @keyframes jump {
+            0% {
+                transform: translateY(0); /* Inicio: no se mueve */
+            }
+            100% {
+                transform: translateY(-5px); /* Fin: se mueve hacia arriba */
+            }
         }
         .roadmap-container {
             text-align: left; /* Alineación del texto del roadmap */
             margin-top: 20px;
+            width: 75%; /* Ajuste del ancho de los recuadros del roadmap */
+            margin: 20px auto; /* Centrado horizontal */
         }
         .roadmap-step {
             margin-bottom: 20px; /* Espacio entre los pasos del roadmap */
