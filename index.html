@@ -55,7 +55,9 @@
             display: inline-block;
             vertical-align: top;
             margin-top: 20px;
-            margin-right: 20px;
+            margin-right: 20px; /* Margen para mantener la misma posición del logo */
+            float: right; /* Alinea la imagen a la derecha */
+            text-align: right; /* Alinea el contenido de la imagen a la derecha */
             /* Ajusta el tamaño de la imagen según el ancho del logo */
             width: 200px;
             height: auto;
@@ -114,7 +116,7 @@
 
     <!-- Agrega la siguiente imagen debajo del logo -->
     <div class="dogs">
-        <img src="dogs.png" alt="Extra Image" width="200px">
+        <img src="dogs.png" alt="Dogs Image" width="200px">
     </div>
 
     <div class="roadmap-container">
@@ -128,12 +130,4 @@
         </div>
         <div class="roadmap-step">
             <h2>Phase 3: Development</h2>
-            <p>Continue development of the EvilPawsCoin ecosystem, including additional features and utilities.</p>
-        </div>
-    </div>
-
-    <div class="footer">
-        © 2024 EvilPawsCoin. All rights reserved.
-    </div>
-</body>
-</html>
+            <p>
