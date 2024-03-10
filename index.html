@@ -12,6 +12,7 @@
             background: radial-gradient(circle, #0f0f0f, #000); /* Mejora del fondo negro */
             color: white; /* Cambiar el color del texto a blanco */
             text-align: center;
+            overflow-x: hidden; /* Para evitar la barra de desplazamiento horizontal */
         }
         .navbar {
             padding: 10px;
@@ -27,10 +28,6 @@
             text-decoration: none;
             text-transform: uppercase; /* Convertir texto a mayúsculas */
             font-weight: bold; /* Hacer el texto en negrita */
-            transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
-        }
-        .button:hover {
-            background-color: rgba(255, 255, 255, 0.7); /* Cambia el color de fondo al pasar el mouse */
         }
         .description-box {
             display: inline-block;
@@ -45,24 +42,13 @@
             width: 40%; /* Cambiar el ancho para ocupar más espacio */
         }
         .logo {
-            margin-top: 20px;
-            margin-right: 20px; /* Añadir margen a la derecha para separar del texto */
-            display: inline-block; /* Hacer que el logo sea inline-block para que los elementos fluyan correctamente */
-            vertical-align: top; /* Alinear el logo al tope */
+            position: fixed; /* Hacer que el logo sea un elemento fijo */
+            top: 20px; /* Espacio desde la parte superior */
+            left: 20px; /* Espacio desde la izquierda */
+            transition: transform 0.3s ease; /* Transición suave para el movimiento */
         }
-        .roadmap-container {
-            width: 60%; /* Utilizar el 60% del ancho para el roadmap */
-            text-align: center; /* Centrar el contenido */
-            margin: 0 auto; /* Centrar el contenedor */
-        }
-        .roadmap-step {
-            margin: 20px 10px;
-            border-radius: 30px; /* Cambiar la forma de los recuadros */
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1); /* Hacer ligeramente transparente */
-            color: white; /* Cambiar el color del texto a blanco */
-            text-align: justify; /* Justificar el texto */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra para un aspecto más profesional */
+        .logo:hover {
+            transform: translateX(20px) rotate(5deg); /* Mover y rotar el logo al pasar el mouse */
         }
         .footer {
             margin-top: 30px;
@@ -77,26 +63,11 @@
     </div>
 
     <div class="logo">
-        <img src="logo1.png" alt="EvilPawsCoin Logo" width="200px">
+        <img src="logo1.png" alt="EvilPawsCoin Logo" width="100px">
     </div>
 
     <div class="description-box">
         <p>A wicked meme token on Solana, determined to reign supreme in the meme coin world. Join us as we unleash the dark side of crypto and carve our path to dominance. Don't miss out on the opportunity to be part of the most powerful meme coin community. Created solely for entertainment purposes with no practical utility.</p>
-    </div>
-
-    <div class="roadmap-container">
-        <div class="roadmap-step">
-            <h2>Phase 1: Launch</h2>
-            <p>Launch the EvilPawsCoin token and distribute it to initial holders.</p>
-        </div>
-        <div class="roadmap-step">
-            <h2>Phase 2: Community Building</h2>
-            <p>Engage with the community through social media, community events, and partnerships.</p>
-        </div>
-        <div class="roadmap-step">
-            <h2>Phase 3: Development</h2>
-            <p>Continue development of the EvilPawsCoin ecosystem, including additional features and utilities.</p>
-        </div>
     </div>
 
     <div class="footer">
