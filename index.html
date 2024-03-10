@@ -17,18 +17,27 @@
             padding: 10px;
             text-align: right;
         }
-        .button, .description-box, .roadmap-container {
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 10px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.5); /* Hacer ligeramente transparente */
+            color: white; /* Cambiar el color del texto a blanco */
+            text-decoration: none;
+            text-transform: uppercase; /* Convertir texto a mayúsculas */
+            font-weight: bold; /* Hacer el texto en negrita */
+        }
+        .description-box {
             display: inline-block;
             vertical-align: top; /* Alinear elementos al tope */
             margin: 20px 10px;
-            border-radius: 30px; /* Cambiar la forma de los recuadros */
+            border-radius: 30px; /* Cambiar la forma del recuadro */
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1); /* Hacer ligeramente transparente */
-            color: white; /* Cambiar el color del texto a blanco */
+            background-color: rgba(255, 255, 0, 0.3); /* Amarillo transparente */
+            color: black; /* Cambiar el color del texto a negro */
             text-align: left;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra para un aspecto más profesional */
-        }
-        .description-box {
             width: 30%; /* Cambiar el ancho para dejar espacio para el logo */
             margin-right: 20px; /* Añadir margen a la derecha para separar del logo */
         }
@@ -40,6 +49,15 @@
         .roadmap-container {
             width: 60%; /* Utilizar el 60% del ancho para el roadmap */
             text-align: left; /* Alinear texto del roadmap a la izquierda */
+        }
+        .roadmap-step {
+            margin: 20px 10px;
+            border-radius: 30px; /* Cambiar la forma de los recuadros */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Hacer ligeramente transparente */
+            color: white; /* Cambiar el color del texto a blanco */
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra para un aspecto más profesional */
         }
         .footer {
             margin-top: 30px;
