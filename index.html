@@ -43,12 +43,25 @@
         }
         .logo {
             position: fixed; /* Hacer que el logo sea un elemento fijo */
-            top: 20px; /* Espacio desde la parte superior */
+            top: 50%; /* Centrar verticalmente */
             left: 20px; /* Espacio desde la izquierda */
-            transition: transform 0.3s ease; /* Transición suave para el movimiento */
+            transform: translateY(-50%); /* Alinear verticalmente */
         }
-        .logo:hover {
-            transform: translateX(20px) rotate(5deg); /* Mover y rotar el logo al pasar el mouse */
+        .roadmap-container {
+            text-align: center; /* Centrar el contenido */
+            margin-top: 20px; /* Espacio superior */
+        }
+        .roadmap-step {
+            display: inline-block;
+            vertical-align: top; /* Alinear elementos al tope */
+            margin: 0 10px;
+            border-radius: 30px; /* Cambiar la forma del recuadro */
+            padding: 20px;
+            background-color: rgba(50, 50, 50, 0.7); /* Gris oscuro ligeramente transparente */
+            color: white; /* Cambiar el color del texto a blanco */
+            text-align: justify; /* Justificar el texto */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agregar sombra para un aspecto más profesional */
+            width: 200px; /* Ancho fijo */
         }
         .footer {
             margin-top: 30px;
@@ -68,6 +81,21 @@
 
     <div class="description-box">
         <p>A wicked meme token on Solana, determined to reign supreme in the meme coin world. Join us as we unleash the dark side of crypto and carve our path to dominance. Don't miss out on the opportunity to be part of the most powerful meme coin community. Created solely for entertainment purposes with no practical utility.</p>
+    </div>
+
+    <div class="roadmap-container">
+        <div class="roadmap-step">
+            <h2>Phase 1: Launch</h2>
+            <p>Launch the EvilPawsCoin token and distribute it to initial holders.</p>
+        </div>
+        <div class="roadmap-step">
+            <h2>Phase 2: Community Building</h2>
+            <p>Engage with the community through social media, community events, and partnerships.</p>
+        </div>
+        <div class="roadmap-step">
+            <h2>Phase 3: Development</h2>
+            <p>Continue development of the EvilPawsCoin ecosystem, including additional features and utilities.</p>
+        </div>
     </div>
 
     <div class="footer">
